@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <%- include ('./nav') %>
+    <h1>this is success page</h1>
+    <small>thank you for posting</small>
+    <p>you contacted <%= data.who %> in the <%=data.department%> department </p>
+    <p>we will reply you on <%=data.email  %> </p>
+
+</body>
+
+</html>

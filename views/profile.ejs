@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include ('partials/nav') %>
+    <h1>welcome to the profile of <%= person %></h1>
+    <h1>age: <%= data.age %></h1>
+    <h1>job: <%= data.job %></h1>
+    <h1>hobbies:</h1>
+    <ul>
+        <% data.hobbies.forEach(function(item){ %>
+        <li><%= item %></li>
+        <% }) %>
+    </ul>
+</body>
+
+</html>
